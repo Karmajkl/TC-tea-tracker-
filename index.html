@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaTaster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TeaTaster</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#explore">Explore Teas</a></li>
+                <li><a href="#rate">Rate a Tea</a></li>
+                <li><a href="#favorites">My Favorites</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section>
+            <h2>Welcome to TeaTaster</h2>
+            <p>Your go-to app for exploring and rating teas.</p>
+        </section>
+    </main>
+
+    <main id="explore" style="display:none;">
+        <section>
+            <h2>Explore Teas</h2>
+            <input type="text" id="search-bar" placeholder="Search for teas...">
+            <div id="tea-list"></div>
+        </section>
+    </main>
+
+    <main id="rate" style="display:none;">
+        <section>
+            <h2>Rate a Tea</h2>
+            <form id="rate-form">
+                <input type="text" id="tea-name" placeholder="Tea Name" required>
+                <select id="tea-type">
+                    <option value="Black">Black</option>
+                    <option value="Green">Green</option>
+                    <option value="Herbal">Herbal</option>
+                    <option value="Oolong">Oolong</option>
+                    <option value="White">White</option>
+                </select>
+                <input type="number" id="tea-rating" min="1" max="5" placeholder="Rating (1-5)" required>
+                <textarea id="tea-review" placeholder="Write a review..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <main id="favorites" style="display:none;">
+        <section>
+            <h2>My Favorites</h2>
+            <div id="favorites-list"></div>
+        </section>
+    </main>
+
+    <main id="about" style="display:none;">
+        <section>
+            <h2>About TeaTaster</h2>
+            <p>Learn more about the app and its features.</p>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
